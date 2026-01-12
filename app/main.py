@@ -31,4 +31,9 @@ def create_group(group: GroupCreate):
     db.close()
     return db_group
 
-
+@.get("/companies/{company_id}/groups/", response_model=list[GroupCreate])
+def get_groups_by_company(company_id: int):
+    db: Session = SessionLocal()
+    groups = db.query(Group).filter(Group.company_id == company_id).all()
+    db.close()
+    return groups
