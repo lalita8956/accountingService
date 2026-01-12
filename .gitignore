@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.flaskenv
+
+# Editors/IDE
+.idea/  # For PyCharm/IntelliJ
+.vscode/ # For VS Code (optional, as some settings might be shareable)
+*.swp   # For Vim
+
+# OS-specific
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# FastAPI Cloud specific (if applicable)
+.fastapicloudignore
+tests/ # if you don't need tests in deployment
+docs/  # if you don't need docs in deployment
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage*
+coverage.xml
